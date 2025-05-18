@@ -8,8 +8,7 @@ import StatusFooter from "../components/StatusFooter";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import SwiperCore, { Navigation } from 'swiper';
-SwiperCore.use([Navigation]);
+import { Navigation } from 'swiper/modules';
 
 const Index = () => {
   // Intersection Observer for scroll animations
@@ -77,6 +76,7 @@ const Index = () => {
         <div className="px-4 md:px-8 py-8">
           <h2 className="text-xl md:text-2xl font-bold mb-6 text-darkText">Recommended Contacts</h2>
           <Swiper
+            modules={[Navigation]}
             spaceBetween={24}
             slidesPerView={1.2}
             breakpoints={{
