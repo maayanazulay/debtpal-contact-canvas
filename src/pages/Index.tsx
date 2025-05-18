@@ -59,6 +59,26 @@ const Index = () => {
       profileImage: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1361&auto=format&fit=crop&ixlib=rb-4.0.3",
       reasoningText: "Sarah has extensive experience helping professionals consolidate student loans with mortgage refinancing, similar to your current financial goals.",
       delay: "card-animation-delay-3"
+    },
+    {
+      name: "Priya Patel",
+      title: "Mortgage Lending Officer",
+      email: "priya.patel@lendingfirst.com",
+      phone: "(555) 456-7890",
+      matchPercentage: 90,
+      profileImage: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3",
+      reasoningText: "Priya specializes in first-time homebuyer programs and has access to exclusive low-rate offers. She can help you navigate complex mortgage options and secure the best deal for your situation.",
+      delay: "card-animation-delay-4"
+    },
+    {
+      name: "David Kim",
+      title: "Senior Loan Consultant",
+      email: "david.kim@trustloans.com",
+      phone: "(555) 567-8901",
+      matchPercentage: 85,
+      profileImage: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3",
+      reasoningText: "David has a proven track record helping tech professionals refinance student and personal loans. He offers personalized strategies to lower your monthly payments and improve your credit profile.",
+      delay: "card-animation-delay-5"
     }
   ];
 
@@ -73,11 +93,11 @@ const Index = () => {
         <ProfileHeader />
         
         {/* Contact Cards */}
-        <div className="px-4 md:px-8 py-8">
+        <div className="px-4 md:px-8 py-8 overflow-x-auto">
           <h2 className="text-xl md:text-2xl font-bold mb-6 text-darkText">Recommended Contacts</h2>
           <Swiper
             modules={[Navigation]}
-            spaceBetween={24}
+            spaceBetween={12}
             slidesPerView={1.2}
             breakpoints={{
               640: { slidesPerView: 1.5 },
@@ -88,7 +108,7 @@ const Index = () => {
             className="pb-8"
           >
             {contacts.map(contact => (
-              <SwiperSlide key={contact.name}>
+              <SwiperSlide key={contact.name} className="!flex !justify-center" style={{ minWidth: 320, maxWidth: 340 }}>
                 <ContactCard {...contact} />
               </SwiperSlide>
             ))}
