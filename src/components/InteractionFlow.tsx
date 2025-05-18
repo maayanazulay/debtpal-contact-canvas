@@ -1,7 +1,23 @@
 
 import React from "react";
+import { useToast } from "@/hooks/use-toast";
+import { Check } from "lucide-react";
 
 const InteractionFlow: React.FC = () => {
+  const { toast } = useToast();
+  
+  const handleSendEmail = () => {
+    toast({
+      title: "James continues with DebtPal",
+      description: "Awaiting Lisa's reply. DebtPal will notify James when she responds.",
+      action: (
+        <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
+          <Check className="h-4 w-4 text-green-600" />
+        </div>
+      ),
+    });
+  };
+  
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 content-appear">
       <div className="text-center mb-8">
@@ -25,7 +41,7 @@ const InteractionFlow: React.FC = () => {
           </div>
         </div>
         
-        <div className="w-full max-w-md mx-auto bg-white rounded-lg shadow p-4 border border-gray-100">
+        <div className="w-full max-w-2xl mx-auto bg-white rounded-lg shadow p-4 border border-gray-100 px-10">
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-full overflow-hidden">
@@ -53,7 +69,10 @@ const InteractionFlow: React.FC = () => {
             </div>
           </div>
           
-          <button className="bg-primary text-white rounded-md py-2 px-4 text-sm font-medium hover:bg-primary/90 transition-colors w-full">
+          <button 
+            className="bg-primary text-white rounded-md py-2 px-4 text-sm font-medium hover:bg-primary/90 transition-colors w-full"
+            onClick={handleSendEmail}
+          >
             Send Email
           </button>
         </div>
