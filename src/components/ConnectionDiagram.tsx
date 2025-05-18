@@ -63,9 +63,15 @@ const ConnectionDiagram: React.FC = () => {
             className="connection-line"
           />
           
-          {/* Central node */}
-          <circle cx="200" cy="150" r="30" fill="#2563eb" className="animate-pulse" />
-          <text x="200" y="155" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">DebtPal</text>
+          {/* Central node - replaced circle with image */}
+          <circle cx="200" cy="150" r="30" fill="white" stroke="#2563eb" strokeWidth="2" />
+          <image
+            href="/lovable-uploads/994fff0d-614c-4167-ba8b-ed4321977530.png"
+            x="170"
+            y="120"
+            height="60"
+            width="60"
+          />
           
           {/* User nodes */}
           <circle cx="80" cy="80" r="25" fill="white" stroke="#2563eb" strokeWidth="2" className="animate-float" />
