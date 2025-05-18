@@ -21,7 +21,7 @@ const InteractionFlow: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 content-appear">
       <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-darkText mb-3">Making Connections</h2>
+        <h2 className="text-2xl font-bold text-darkText mb-3">Making More Connections</h2>
         <p className="text-gray-600">James sees Lisa and thinks she's an interesting contact.</p>
         <p className="text-gray-600">He asks DebtPal to generate a cold email draft.</p>
       </div>
