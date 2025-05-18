@@ -14,9 +14,16 @@ const ProfileHeader: React.FC = () => {
         </div>
         <span className="absolute bottom-0 right-0 w-6 h-6 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
-      <div>
+      <div className="flex-1">
         <h2 className="text-2xl md:text-3xl font-bold text-darkText">James gets New Contact Suggestions</h2>
         <p className="text-gray-600 mt-1">DebtPal has found professionals who match your financial interests</p>
+      </div>
+      <div className="flex-shrink-0 w-16 h-16 hidden md:block">
+        <img 
+          src="/lovable-uploads/994fff0d-614c-4167-ba8b-ed4321977530.png"
+          alt="DebtPal icon" 
+          className="w-full h-full object-contain"
+        />
       </div>
     </div>
   );
