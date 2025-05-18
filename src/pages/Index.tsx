@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Hero from "../components/Hero";
 import ProfileHeader from "../components/ProfileHeader";
@@ -6,6 +5,11 @@ import ContactCard from "../components/ContactCard";
 import ConnectionDiagram from "../components/ConnectionDiagram";
 import InteractionFlow from "../components/InteractionFlow";
 import StatusFooter from "../components/StatusFooter";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import SwiperCore, { Navigation } from 'swiper';
+SwiperCore.use([Navigation]);
 
 const Index = () => {
   // Intersection Observer for scroll animations
@@ -72,14 +76,23 @@ const Index = () => {
         {/* Contact Cards */}
         <div className="px-4 md:px-8 py-8">
           <h2 className="text-xl md:text-2xl font-bold mb-6 text-darkText">Recommended Contacts</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Swiper
+            spaceBetween={24}
+            slidesPerView={1.2}
+            breakpoints={{
+              640: { slidesPerView: 1.5 },
+              768: { slidesPerView: 2.2 },
+              1024: { slidesPerView: 3.5 }
+            }}
+            navigation
+            className="pb-8"
+          >
             {contacts.map(contact => (
-              <ContactCard
-                key={contact.name}
-                {...contact}
-              />
+              <SwiperSlide key={contact.name}>
+                <ContactCard {...contact} />
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
         
         {/* Connection Diagram */}

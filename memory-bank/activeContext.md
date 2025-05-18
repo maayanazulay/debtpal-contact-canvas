@@ -1,15 +1,19 @@
 # Active Context
 
 ## Current Work Focus
-- Initial Memory Bank setup
-- Establishing project documentation and context
+- Implementing a modern, swipable gallery for Recommended Contacts using Swiper.js
+- Adding two new realistic lender contacts to the gallery
+- Improving the UI/UX for both mobile and desktop (arrows/buttons on desktop, swipe on mobile)
 
 ## Recent Changes
-- Created foundational Memory Bank files (projectbrief.md, productContext.md, systemPatterns.md, techContext.md, activeContext.md, progress.md)
+- Chose Swiper.js for the Recommended Contacts gallery
+- Planned responsive, visually impressive carousel with 3.5 cards visible and smooth transitions
 
 ## Next Steps
-- Review and update documentation as project evolves
-- Begin implementation of core features (contact upload, visualization)
+- Install Swiper.js and set up styles
+- Refactor Recommended Contacts section to use Swiper
+- Add new lender contacts with realistic data
+- Polish and test responsiveness and transitions
 
 ## Active Decisions
-- Prioritize documentation and context before feature development 
+- Prioritize impressive, modern UI for contact recommendations 

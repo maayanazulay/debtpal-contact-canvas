@@ -11,6 +11,8 @@ Managing large volumes of contact data is a common challenge in debt management 
 ## How It Should Work
 - Users can upload contact lists or add contacts manually
 - Contacts are displayed in an interactive, filterable view
+- Recommended Contacts are shown in a modern, swipable gallery (carousel) with smooth transitions and responsive design
+- Users can swipe on mobile or use arrows/buttons on desktop to browse contacts
 - Users can tag, group, and search contacts easily
 - Actions (e.g., messaging, assignment) are accessible directly from the interface
 
@@ -18,4 +20,5 @@ Managing large volumes of contact data is a common challenge in debt management 
 - Fast, intuitive onboarding
 - Minimal clicks to perform common actions
 - Clear feedback for user actions
-- Mobile-friendly and accessible design 
+- Mobile-friendly and accessible design
+- Visually impressive, modern carousel for contact recommendations 

@@ -4,6 +4,7 @@
 - React (TypeScript)
 - Vite (build tool)
 - Tailwind CSS (styling)
+- Swiper.js (carousel for Recommended Contacts)
 - Bun (optional, for fast JS runtime)
 
 ## Development Setup
@@ -21,4 +22,5 @@
 - react, react-dom
 - vite
 - tailwindcss, postcss
+- swiper
 - typescript 
